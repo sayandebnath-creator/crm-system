@@ -1,6 +1,8 @@
-# CRM with Stripe Payment Integration (Laravel)
+# NexCRM with Stripe Payment Integration (Laravel)
 
 A production-style **Customer Relationship Management (CRM)** system built with Laravel, featuring deal tracking, customer management, and secure payment integration using Stripe.
+
+<img width="1464" height="708" alt="Screenshot 2026-03-28 at 8 40 50 PM" src="https://github.com/user-attachments/assets/4fc97f19-03a0-4ca1-a318-aa6d96f569e8" />
 
 ---
 
@@ -110,7 +112,7 @@ Customers → Deals → Payments
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/crm-system.git
+git clone https://github.com/sayandebnath-creator/crm-system.git
 cd crm-system
 ```
 
@@ -161,7 +163,7 @@ php artisan serve
 
 ---
 
-## 🧪 Stripe Test Card
+## Stripe Test Card
 
 Use this test card:
 
@@ -173,7 +175,7 @@ Any CVV
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 app/
@@ -214,8 +216,13 @@ resources/views/
 ## Screenshots
 
 * Dashboard with analytics
+  <img width="1467" height="704" alt="Screenshot 2026-03-28 at 8 27 29 PM" src="https://github.com/user-attachments/assets/949407fa-9f62-43c9-b3c2-dd5ef46dd829" />
+
 * Deals listing with filters
+<img width="1465" height="705" alt="Screenshot 2026-03-28 at 8 28 02 PM" src="https://github.com/user-attachments/assets/cc31aba9-0554-437a-a2d6-113b2b4fd66e" />
+
 * Stripe Checkout payment flow
+<img width="1464" height="705" alt="Screenshot 2026-03-28 at 8 28 29 PM" src="https://github.com/user-attachments/assets/4fc7197e-ac39-4800-8097-76ef2b3352d3" />
 
 ---
 
