@@ -1,0 +1,19 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jupitern/public_html
+
+    # Copy all except public
+    - /bin/rsync -av --exclude='public' ./ $DEPLOYPATH/
+
+    # Copy public folder contents
+    - /bin/rsync -av public/ $DEPLOYPATH/
+
+    - cd $DEPLOYPATH
+
+    - /usr/bin/composer install --no-dev --optimize-autoloader
+
+    - php artisan migrate --force
+
+    - php artisan config:clear
+    - php artisan cache:clear
+    - php artisan view:clear
