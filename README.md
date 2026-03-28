@@ -2,6 +2,8 @@
 
 A production-style **Customer Relationship Management (CRM)** system built with Laravel, featuring deal tracking, customer management, and secure payment integration using Stripe.
 
+<img width="1464" height="708" alt="Screenshot 2026-03-28 at 8 40 50 PM" src="https://github.com/user-attachments/assets/4fc97f19-03a0-4ca1-a318-aa6d96f569e8" />
+
 ---
 
 ## Demo
