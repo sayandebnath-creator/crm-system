@@ -55,56 +55,73 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
+let lineChart, pieChart, barChart;
+
 document.addEventListener('turbo:load', function () {
 
     // LINE CHART
-    new Chart(document.getElementById('lineChart'), {
-        type: 'line',
-        data: {
-            labels: @json($months),
-            datasets: [{
-                label: 'Revenue',
-                data: @json($monthlyRevenue),
-                borderWidth: 2,
-                tension: 0.4,
-                fill: true
-            }]
-        },
-        options: {
-            plugins: { legend: { display: false } },
-            responsive: true
-        }
-    });
+    const lineCtx = document.getElementById('lineChart');
+    if (lineCtx) {
+        if (lineChart) lineChart.destroy();
+
+        lineChart = new Chart(lineCtx, {
+            type: 'line',
+            data: {
+                labels: @json($months),
+                datasets: [{
+                    label: 'Revenue',
+                    data: @json($monthlyRevenue),
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                responsive: true
+            }
+        });
+    }
 
     // PIE CHART
-    new Chart(document.getElementById('pieChart'), {
-        type: 'doughnut',
-        data: {
-            labels: @json($statusLabels),
-            datasets: [{
-                data: @json($statusCounts)
-            }]
-        },
-        options: {
-            plugins: { legend: { position: 'bottom' } }
-        }
-    });
+    const pieCtx = document.getElementById('pieChart');
+    if (pieCtx) {
+        if (pieChart) pieChart.destroy();
+
+        pieChart = new Chart(pieCtx, {
+            type: 'doughnut',
+            data: {
+                labels: @json($statusLabels),
+                datasets: [{
+                    data: @json($statusCounts)
+                }]
+            },
+            options: {
+                plugins: { legend: { position: 'bottom' } }
+            }
+        });
+    }
 
     // BAR CHART
-    new Chart(document.getElementById('barChart'), {
-        type: 'bar',
-        data: {
-            labels: @json($dealLabels),
-            datasets: [{
-                label: 'Revenue',
-                data: @json($dealData),
-                borderWidth: 1
-            }]
-        },
-        options: {
-            plugins: { legend: { display: false } }
-        }
-    });
+    const barCtx = document.getElementById('barChart');
+    if (barCtx) {
+        if (barChart) barChart.destroy();
+
+        barChart = new Chart(barCtx, {
+            type: 'bar',
+            data: {
+                labels: @json($dealLabels),
+                datasets: [{
+                    label: 'Revenue',
+                    data: @json($dealData),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } }
+            }
+        });
+    }
 
 });
 </script>
