@@ -214,8 +214,13 @@ resources/views/
 ## Screenshots
 
 * Dashboard with analytics
+  <img width="1467" height="704" alt="Screenshot 2026-03-28 at 8 27 29 PM" src="https://github.com/user-attachments/assets/949407fa-9f62-43c9-b3c2-dd5ef46dd829" />
+
 * Deals listing with filters
+<img width="1465" height="705" alt="Screenshot 2026-03-28 at 8 28 02 PM" src="https://github.com/user-attachments/assets/cc31aba9-0554-437a-a2d6-113b2b4fd66e" />
+
 * Stripe Checkout payment flow
+<img width="1464" height="705" alt="Screenshot 2026-03-28 at 8 28 29 PM" src="https://github.com/user-attachments/assets/4fc7197e-ac39-4800-8097-76ef2b3352d3" />
 
 ---
 
