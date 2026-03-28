@@ -1,4 +1,4 @@
-# CRM with Stripe Payment Integration (Laravel)
+# NexCRM with Stripe Payment Integration (Laravel)
 
 A production-style **Customer Relationship Management (CRM)** system built with Laravel, featuring deal tracking, customer management, and secure payment integration using Stripe.
 
@@ -161,7 +161,7 @@ php artisan serve
 
 ---
 
-## 🧪 Stripe Test Card
+## Stripe Test Card
 
 Use this test card:
 
@@ -173,7 +173,7 @@ Any CVV
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 app/
